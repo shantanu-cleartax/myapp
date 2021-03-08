@@ -21,7 +21,7 @@ interface req {
 }
 
 
-const TitleSearchScreen = ({navigation}:any)=>{
+const TitleSearchScreen = (props:any)=>{
 
     const [searchQuery, setSearchQuery] = React.useState('');
 
@@ -85,7 +85,9 @@ const TitleSearchScreen = ({navigation}:any)=>{
                 keyExtractor={(item, index) => item.l}
                 renderItem = {({item})=>{
                     return (
-                        <TouchableOpacity onPress={() => {navigation.navigate('Title')}}>
+                        <TouchableOpacity onPress={() => {
+                            props.navigation.navigate('Title', {itemID: item.id})
+                        }}>
                             <Text style={styles.flatlist} >{item.l}</Text>
                         </TouchableOpacity>
                     );
