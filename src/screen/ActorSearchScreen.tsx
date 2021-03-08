@@ -10,7 +10,7 @@ const ActorSearchScreen = ({navigation}:any)=>{
 
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>Actor Search</Text>
+          <Text>Actor Search</Text> 
           <Searchbar
             placeholder="Search"
             onChangeText={onChangeSearch}

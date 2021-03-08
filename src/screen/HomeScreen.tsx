@@ -19,7 +19,7 @@ const HomeScreen = ({navigation}:any)=>{
                         navigation.dispatch(
                             CommonActions.reset({
                               index: 1,
-                              routes: [
+                              routes: [ 
                                 { name: 'Details' },
                               ],
                             })

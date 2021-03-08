@@ -7,9 +7,9 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
 
-const TitleScreen = ({navigation}:any, titled:any)=>{
+const TitleScreen = ({navigation}:any)=>{
     return(
-        <Text></Text>
+        <Text>Hello</Text>
     );
 }
 

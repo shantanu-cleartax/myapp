@@ -18,7 +18,7 @@ const DetailScreen = ({navigation}:any)=>{
           <Button mode="contained" onPress={() => navigation.navigate('Titles')} style={styles.button}>
               <Text style ={styles.buttonText}>Search Titles</Text>
           </Button>
-        </View>
+        </View> 
       );
 }
 
