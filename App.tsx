@@ -32,6 +32,7 @@ const App = () => {
         <Stack.Screen 
           name="Details" 
           component={DetailScreen}
+          options={{headerShown: false}}
         />
         <Stack.Screen 
           name="Actors" 

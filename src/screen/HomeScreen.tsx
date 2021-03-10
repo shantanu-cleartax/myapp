@@ -4,41 +4,52 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { CommonActions } from '@react-navigation/native';
 
 
-
-
 const HomeScreen = ({navigation}:any)=>{
 
+  const timeFun = ()=>{
+
+    }
 
     return (
         <View style={styles.container}>
-            <MaterialIcons name='movie' size={100}/>
-            <Text style={styles.welcomeText}>IMDb API Caller</Text>
-            <Text style={{textDecorationColor: 'white'}}>
-                {
-                    setTimeout(() => {
-                        navigation.dispatch(
-                            CommonActions.reset({
-                              index: 1,
-                              routes: [ 
-                                { name: 'Details' },
-                              ],
-                            })
-                          );
-                    }, 3000, 'funky')
-                }
+        {/* <SplashScreen >
+
+        </SplashScreen> */}
+            <MaterialIcons name='movie' size={100} color='#1F51FF'/>
+            <Text style={{color: '#222'}}>
+              {     
+                setTimeout(() => {
+                  navigation.dispatch(
+                      CommonActions.reset({
+                        index: 1,
+                        routes: [ 
+                          { name: 'Details' },
+                        ],
+                      })
+                    );
+                  }, 2000)
+              } 
             </Text>
+                        
+            <Text style={styles.welcomeText}>IMDb
+
+            </Text>
+
         </View>
       );
 }
 
 const styles = StyleSheet.create({
     welcomeText: {
-      fontSize: 20,
+      fontSize: 30,
+      fontWeight: 'bold',
+      color: '#FFF'
     },
     container: {
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: '#222'
     },
   });
 
